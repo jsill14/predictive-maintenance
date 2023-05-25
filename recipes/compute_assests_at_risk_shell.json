@@ -3,6 +3,8 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
+    "pipeIn": "Assets_at_risk",
+    "pipeOut": "assests_at_risk_shell",
     "autoInferSchema": false,
     "expectHeaders": false,
     "sendHeaders": false,
@@ -37,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1685042103377
+    "lastModifiedOn": 1685042126671
   },
   "creationTag": {
     "versionNumber": 0,
