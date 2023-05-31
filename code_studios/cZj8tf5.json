@@ -1,0 +1,26 @@
+{
+  "name": "vscode-example",
+  "libName": "vscode-example",
+  "templateId": "vs-code",
+  "params": {},
+  "owner": "admin",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1685564920961
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1685564920961
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
