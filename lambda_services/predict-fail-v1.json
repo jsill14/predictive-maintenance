@@ -1,8 +1,9 @@
 {
+  "name": "predict-fail-v1",
   "endpoints": [
     {
       "modelRef": "FMiENrMQ",
-      "useJava": true,
+      "useJava": false,
       "computePropensity": false,
       "outputExplanations": false,
       "individualExplanationParams": {
@@ -33,11 +34,11 @@
   },
   "deploymentMonitoring": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1685568215850
+    "lastModifiedOn": 1685568218724
   },
   "creationTag": {
     "versionNumber": 0,
