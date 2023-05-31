@@ -36,11 +36,11 @@
   "config": {},
   "name": "jsill-dash-hist",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1685568601792
+    "lastModifiedOn": 1685568628128
   },
   "creationTag": {
     "versionNumber": 0,
