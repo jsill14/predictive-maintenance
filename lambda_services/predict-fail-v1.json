@@ -1,0 +1,54 @@
+{
+  "endpoints": [
+    {
+      "modelRef": "FMiENrMQ",
+      "useJava": true,
+      "computePropensity": false,
+      "outputExplanations": false,
+      "individualExplanationParams": {
+        "method": "ICE",
+        "nbExplanations": 3,
+        "drawInScoredSet": false,
+        "subChunkSize": 5000,
+        "shapleyBackgroundSize": 100
+      },
+      "mlFlowOutputStyle": "PARSED",
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "returnPostEnrichData": false,
+      "auditPostEnrichData": false,
+      "id": "predict-fail-v1",
+      "type": "STD_PREDICTION"
+    }
+  ],
+  "authMethod": "PUBLIC",
+  "authRealm": {
+    "queryKeys": []
+  },
+  "oauth2Config": {
+    "keysFormat": "JWKS_URI",
+    "scopeClaimFormat": "STRING",
+    "scopeClaimKey": "scope"
+  },
+  "deploymentMonitoring": [],
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1685568215850
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1685568215832
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
