@@ -2,11 +2,12 @@
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
+from time import sleep 
 
 # Read recipe inputs
 Assets_at_high_priority = dataiku.Dataset("Assets_at_high_priority")
 Assets_at_high_priority_df = Assets_at_high_priority.get_dataframe()
-
+sleep(10)
 
 # Compute recipe outputs from inputs
 # TODO: Replace this part by your actual code that computes the output, as a Pandas dataframe
