@@ -3,7 +3,7 @@ name: Dataiku Pipeline
 on:
   push:
     branches:
-      - main
+      - master
 
 env:
   bundle_name: ${{ format('bundle_{0}', steps.dateTime.outputs.timestamp) }}
