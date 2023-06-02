@@ -45,10 +45,10 @@ jobs:
           echo "DSS project bundle created and downloaded in local workspace"
           ls -la
 
-#       - name: Preprod Test
-#         run: |
-#           python 3_preprod_test/import_bundle.py "${{ secrets.DESIGN_URL }}" "${{ secrets.DESIGN_API_KEY }}" "${{ secrets.DSS_PROJECT }}" $bundle_name "${{ secrets.AUTO_PREPROD_ID }}"
-#           python -m pytest 3_preprod_test/run_test.py -o junit_family=xunit1 --host="${{ secrets.AUTO_PREPROD_URL }}" --api="${{ secrets.AUTO_PREPROD_API_KEY }}" --project="${{ secrets.DSS_PROJECT }}" --junitxml=reports/PREPROD_TEST.xml
+      - name: Preprod Test
+        run: |
+          python 3_preprod_test/import_bundle.py "${{ secrets.DESIGN_URL }}" "${{ secrets.DESIGN_API_KEY }}" "${{ secrets.DSS_PROJECT }}" $bundle_name "${{ secrets.AUTO_PREPROD_ID }}"
+          python -m pytest 3_preprod_test/run_test.py -o junit_family=xunit1 --host="${{ secrets.AUTO_PREPROD_URL }}" --api="${{ secrets.AUTO_PREPROD_API_KEY }}" --project="${{ secrets.DSS_PROJECT }}" --junitxml=reports/PREPROD_TEST.xml
 
       - name: Deploy to Production
         run: |
