@@ -37,11 +37,11 @@ jobs:
 
       - name: Project Validation
         run: |
-          python -m pytest 1_project_validation/run_test.py -o junit_family=xunit1 --host="${{ secrets.DESIGN_URL }}" --api="${{ secrets.DESIGN_API_KEY }}" --project="${{ secrets.DSS_PROJECT }}" --junitxml=reports/PROJECT_VALIDATION.xml
+          python -m pytest ./.github/workflows/1_project_validation/run_test.py -o junit_family=xunit1 --host="${{ secrets.DESIGN_URL }}" --api="${{ secrets.DESIGN_API_KEY }}" --project="${{ secrets.DSS_PROJECT }}" --junitxml=reports/PROJECT_VALIDATION.xml
 
       - name: Package Bundle
         run: |
-          python 2_package_bundle/run_bundling.py "${{ secrets.DESIGN_URL }}" "${{ secrets.DESIGN_API_KEY }}" "${{ secrets.DSS_PROJECT }}" $bundle_name
+          python ./.github/workflows/2_package_bundle/run_bundling.py "${{ secrets.DESIGN_URL }}" "${{ secrets.DESIGN_API_KEY }}" "${{ secrets.DSS_PROJECT }}" $bundle_name
           echo "DSS project bundle created and downloaded in local workspace"
           ls -la
 
@@ -52,7 +52,7 @@ jobs:
 
       - name: Deploy to Production
         run: |
-          python 4_deploy_prod/deploy_bundle.py "${{ secrets.DESIGN_URL }}" "${{ secrets.DESIGN_API_KEY }}" "${{ secrets.DSS_PROJECT }}" $bundle_name "${{ secrets.AUTO_PROD_ID }}" "${{ secrets.AUTO_PROD_URL }}" "${{ secrets.AUTO_PROD_API_KEY }}"
+          python ./.github/workflows/4_deploy_prod/deploy_bundle.py "${{ secrets.DESIGN_URL }}" "${{ secrets.DESIGN_API_KEY }}" "${{ secrets.DSS_PROJECT }}" $bundle_name "${{ secrets.AUTO_PROD_ID }}" "${{ secrets.AUTO_PROD_URL }}" "${{ secrets.AUTO_PROD_API_KEY }}"
 
       - name: Clean Up
         run: |
