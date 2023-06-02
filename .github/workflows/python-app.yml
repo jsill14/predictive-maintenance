@@ -22,13 +22,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Display requirements.txt
-        run: cat requirements.txt
-
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt
+          python -m pip install -r dataiku-api-client >=9.0.0 pandas==0.23.4 radon pytest
 
       - name: Project Validation
         run: |
