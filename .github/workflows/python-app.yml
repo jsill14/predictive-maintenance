@@ -6,7 +6,7 @@ on:
       - master
 
 env:
-  bundle_name: ${{ format('bundle_{0}', steps.dateTime.outputs.timestamp) }}
+  bundle_name: ${{ format('bundle_{0}', github.run_number) }}
 
 jobs:
   build:
