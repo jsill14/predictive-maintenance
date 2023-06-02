@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1519399676299
+    "lastModifiedOn": 1685719911102
   },
   "creationTag": {
     "versionNumber": 0,
@@ -92,7 +92,8 @@
       {"name":"Asset","type":"string"},
       {"name":"Time_min","type":"int"},
       {"name":"Use_min","type":"double"},
-      {"name":"Use_max","type":"double"}
+      {"name":"Use_max","type":"double"},
+      {"name":"Use_avg","type":"double"}
     ],
     "userModified": true
   },
